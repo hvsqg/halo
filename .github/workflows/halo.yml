@@ -157,11 +157,11 @@ jobs:
             ${{ runner.os }}-dependencies-
       - name: Get version of halo
         id: get_halo_version
+        # echo "HALO_VERSION=${version}" >> $GITHUB_ENV
         run: |
           chmod +x ./gradlew
           version=$(./gradlew -q projectVersion)
           echo "Trying to build and publish halo:${version}"
-#          echo "HALO_VERSION=${version}" >> $GITHUB_ENV
           echo "HALO_VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
