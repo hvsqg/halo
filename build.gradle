@@ -34,18 +34,15 @@ configurations {
     }
 }
 
-
-jar {
-    enabled = true
-    archiveClassifier = '' //use empty string
-}
-
-
 bootJar {
     manifest {
         attributes "Implementation-Title": "Halo Application",
                 "Implementation-Version": archiveVersion
     }
+}
+
+jar {
+    enabled = false
 }
 
 bootBuildImage.doFirst {
