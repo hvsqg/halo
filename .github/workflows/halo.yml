@@ -12,10 +12,7 @@ on:
       - '**'
       - '!**.md'
   release:
-    types: # This configuration does not affect the page_build event above
-      - release
-      - created
-      - edited      
+    types: [published, created, edited]  
 
 jobs:
   check:
