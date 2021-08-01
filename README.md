@@ -1,13 +1,13 @@
-<h1 align="center"><a href="https://github.com/halo-dev" target="_blank">Halo</a></h1>
+<h1 align="center"><a href="https://github.com/hvsqg" target="_blank">Halo</a></h1>
 
 > Halo 是一款现代化的个人独立博客系统，给习惯写博客的同学多一个选择。
 
 <p align="center">
-<a href="https://github.com/halo-dev/halo/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/halo-dev/halo.svg?style=flat-square"/></a>
-<a href="https://github.com/halo-dev/halo/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/halo-dev/halo/total.svg?style=flat-square"></a>
-<a href="https://hub.docker.com/r/halohub/halo"><img alt="Docker pulls" src="https://img.shields.io/docker/pulls/halohub/halo?style=flat-square"></a>
-<a href="https://github.com/halo-dev/halo/commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/halo-dev/halo.svg?style=flat-square"></a>
-<a href="https://github.com/halo-dev/halo/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/halo-dev/halo/Halo%20CI?style=flat-square"/></a>
+<a href="https://github.com/hvsqg/halo/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/hvsqg/halo.svg?style=flat-square"/></a>
+<a href="https://github.com/hvsqg/halo/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/hvsqg/halo/total.svg?style=flat-square"></a>
+<a href="https://hub.docker.com/r/hhvssqg/halo"><img alt="Docker pulls" src="https://img.shields.io/docker/pulls/hhvssqg/halo?style=flat-square"></a>
+<a href="https://github.com/hvsqg/halo/commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hvsqg/halo.svg?style=flat-square"></a>
+<a href="https://github.com/hvsqg/halo/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/hvsqg/halo/Halo%20CI?style=flat-square"/></a>
 </p>
 
 ------------------------------
@@ -27,7 +27,7 @@
 > 其他地址：https://docs.halo.run/install/downloads
 
 ```bash
-curl -L https://github.com/halo-dev/halo/releases/download/v1.4.8/halo-1.4.8.jar --output halo.jar
+curl -L https://github.com/hvsqg/halo/releases/download/v1.4.8/halo-1.4.8.jar --output halo.jar
 ```
 
 ```bash
@@ -53,17 +53,10 @@ docker run -it -d --name halo -p 8090:8090 -v ~/.halo:/root/.halo --restart=alwa
 
 ## 许可证
 
-[![license](https://img.shields.io/github/license/halo-dev/halo.svg?style=flat-square)](https://github.com/halo-dev/halo/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/hvsqg/halo.svg?style=flat-square)](https://github.com/hvsqg/halo/blob/master/LICENSE)
 
 > Halo 使用 GPL-v3.0 协议开源，请尽量遵守开源协议。
 
 ## 贡献
 
 参考 [CONTRIBUTING](./CONTRIBUTING.md)。
-
-## 捐赠
-
-> 如果 Halo 对你有帮助，可以请开发团队们喝杯☕️。
-
-- 一次性赞助：<https://sponsor.halo.run>
-- 周期性赞助：<https://afdian.net/@halo-dev>
