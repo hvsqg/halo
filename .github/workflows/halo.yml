@@ -46,7 +46,7 @@ jobs:
             ${{ runner.os }}-dependencies-
 
       - name: Check And Test
-        run: chmod +x ./gradlew && ./gradlew check
+        run: chmod +x ./gradlew && ./gradlew check && echo ${{ github.event_name }}
   build:
     runs-on: ubuntu-latest
     needs: check
