@@ -35,6 +35,12 @@ configurations {
 }
 
 
+jar {
+    enabled = true
+    archiveClassifier = '' //use empty string
+}
+
+
 bootJar {
     manifest {
         attributes "Implementation-Title": "Halo Application",
