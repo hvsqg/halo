@@ -158,6 +158,7 @@ jobs:
       - name: Get version of halo
         id: get_halo_version
         run: |
+          chmod +x ./gradlew
           version=$(./gradlew -q projectVersion)
           echo "Trying to build and publish halo:${version}"
           echo "HALO_VERSION=${version}" >> $GITHUB_ENV
