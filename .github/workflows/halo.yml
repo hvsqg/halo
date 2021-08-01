@@ -12,7 +12,7 @@ on:
       - '**'
       - '!**.md'
   release:
-    types: [published, created, edited]  
+    types: [created]  
 
 jobs:
   check:
