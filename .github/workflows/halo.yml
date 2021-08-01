@@ -12,8 +12,7 @@ on:
       - '**'
       - '!**.md'
   release:
-    types: # This configuration does not affect the page_build event above
-      - created
+    types: [created]  
 
 jobs:
   check:
@@ -79,7 +78,7 @@ jobs:
             ${{ runner.os }}-dependencies-
 
       - name: Build with Gradle
-        run: ./gradlew clean build -x test
+        run: chmod +x ./gradlew && ./gradlew clean build -x test
 
       - name: Archive halo jar
         uses: actions/upload-artifact@v2
@@ -111,7 +110,7 @@ jobs:
         uses: actions/github-script@v2
         if: github.event_name == 'release'
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{secrets.DEPLOY_TOKEN}}
           script: |
             console.log('environment', process.versions);
 
@@ -159,6 +158,7 @@ jobs:
       - name: Get version of halo
         id: get_halo_version
         run: |
+          chmod +x ./gradlew
           version=$(./gradlew -q projectVersion)
           echo "Trying to build and publish halo:${version}"
           echo "HALO_VERSION=${version}" >> $GITHUB_ENV
